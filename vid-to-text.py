@@ -27,7 +27,6 @@ def process_text(input_frame):
 
     cv2.imshow("Webcam OCR", frame)
 
-#does this make the window resizable?
 cv2.namedWindow("Webcam OCR", cv2.WINDOW_NORMAL)
 
 while True:
@@ -38,7 +37,7 @@ while True:
         last_frame = frame.copy()
         cv2.imshow("Webcam OCR", frame) 
 
-    key = cv2.waitKey(1) & 0xFF #because Windows <<<<< Linux or Mac, bitwise AND is needed
+    key = cv2.waitKey(1) & 0xFF
 
     if key == ord('q'):  # Quit
         break
