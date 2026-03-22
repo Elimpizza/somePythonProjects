@@ -1,7 +1,7 @@
 import cv2
 import torch
 
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # yolo 7 maybe?
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 model.conf = 0.5
 cap = cv2.VideoCapture(0)
 
